@@ -1,0 +1,2227 @@
+_type: export
+__export_format: 4
+__export_date: 2023-12-27T20:45:57.109Z
+__export_source: insomnia.desktop.app:v2023.5.8
+resources:
+  - _id: req_df47581c5a4d4585883cd0985b70335f
+    parentId: fld_f7145970fd234860b934ff58867e2d80
+    modified: 1703621876334
+    created: 1703621817561
+    url: "{{ _.local }}equipo/4"
+    name: get-> equipo->id_equipo
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1703097973643
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_f7145970fd234860b934ff58867e2d80
+    parentId: wrk_d820dcb6904744fe83635d9361b621fc
+    modified: 1703097943382
+    created: 1703097824361
+    name: Equipos
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1684694528949.5
+    _type: request_group
+  - _id: wrk_d820dcb6904744fe83635d9361b621fc
+    parentId: null
+    modified: 1686592582634
+    created: 1686592582634
+    name: SIGESPRO
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_d678416c05bc4e70b3caa815d15a26ea
+    parentId: fld_f7145970fd234860b934ff58867e2d80
+    modified: 1703621836640
+    created: 1703097969028
+    url: "{{ _.local }}apertura_equipo"
+    name: get-> apertura_equipo
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1703097973543
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1c0ea0c47405472ab920102585502fe2
+    parentId: fld_f7145970fd234860b934ff58867e2d80
+    modified: 1703621844730
+    created: 1703609614017
+    url: "{{ _.local }}apertura_equipo"
+    name: get-> apertura_equipo
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1702999018771.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a7753bbfab7743f28c872f703c4472dd
+    parentId: fld_f7145970fd234860b934ff58867e2d80
+    modified: 1703706504830
+    created: 1703706495763
+    url: "{{ _.local }}busqueda_integrantes"
+    name: get-> busqueda de nuevos integrantes
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1702949541385.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_440a7513952d473997881c95c3be60e7
+    parentId: fld_f7145970fd234860b934ff58867e2d80
+    modified: 1703708994075
+    created: 1703707937222
+    url: "{{ _.local }}ceder_liderazgo/7"
+    name: get-> ceder_liderazgo
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1702924802692.875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e732dc2471fc4eb1bc824953e55c2ae5
+    parentId: fld_f7145970fd234860b934ff58867e2d80
+    modified: 1703601213709
+    created: 1703267664762
+    url: "{{ _.local }}equipos"
+    name: post-> enviar solicitud a compañero
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nuevo_integrante_id": 53
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1702900064000
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8da33310a45c4319b8d03600eb8a34b3
+    parentId: fld_f7145970fd234860b934ff58867e2d80
+    modified: 1703604311514
+    created: 1703604311514
+    url: "{{ _.local }}equipos"
+    name: post-> enviar solicitud a compañero
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nuevo_integrante_id": 53
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1702801109228.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_737f4a63599844838be22fddb96b306d
+    parentId: fld_f7145970fd234860b934ff58867e2d80
+    modified: 1703608221402
+    created: 1703604765409
+    url: "{{ _.local }}respuesta_solicitud/1"
+    name: put-> responder solicitud
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"respuesta": true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1702751631842.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6fe03dde438d4467be2f3f1a2c8fa6e0
+    parentId: fld_f7145970fd234860b934ff58867e2d80
+    modified: 1703621236418
+    created: 1703621236418
+    url: "{{ _.local }}respuesta_solicitud/1"
+    name: put-> responder solicitud
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"respuesta": true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1702726893149.875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6b501f262c1448df82fac15768eea6e3
+    parentId: fld_f7145970fd234860b934ff58867e2d80
+    modified: 1703267333318
+    created: 1703263850094
+    url: "{{ _.local }}equipos/3"
+    name: delete-> eliminar equipo vacio
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1702702154457
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_058707d6f4b341d787940fe11be36250
+    parentId: wrk_d820dcb6904744fe83635d9361b621fc
+    modified: 1693583664231
+    created: 1684692086380
+    url: "{{ _.local }}user/me"
+    name: Get -> me
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684694528849.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_730734cc19284e8e8184066dcf980318
+    parentId: fld_0363138c76194c959eaa3413bee3f961
+    modified: 1689862108098
+    created: 1689789625718
+    url: https://rest.clicksend.com/v3/sms/send
+    name: envio de sms directo a clicksend
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        
+        {
+
+        "messages": [
+            {
+              "to": "04126153004",
+              "source": "sdk",
+              "body": "Si te llega este mensaje desde mi api te doy tus besitos <3"
+            }
+        	]
+
+        	
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: basic
+      useISO88591: false
+      disabled: false
+      username: roxlenevera362c@gmail.com
+      password: 490D0F9E-4B59-E1DC-D318-AC30F46F279A
+    metaSortKey: -1683998969744.625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_0363138c76194c959eaa3413bee3f961
+    parentId: wrk_d820dcb6904744fe83635d9361b621fc
+    modified: 1691175285493
+    created: 1689862102520
+    name: Clicksend -> Api
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1684694520189.125
+    _type: request_group
+  - _id: req_2dc72bc8675e4e77a4ea9f6e7e63d7c8
+    parentId: fld_0363138c76194c959eaa3413bee3f961
+    modified: 1689862109395
+    created: 1689860807358
+    url: https://rest.clicksend.com/v3/sms/history/export
+    name: reporte de sms directo a clicksend
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: >-
+        
+        {
+
+        "messages": [
+            {
+              "to": "04126153004",
+              "source": "sdk",
+              "body": "Si te llega este mensaje desde mi api te doy tus besitos <3"
+            }
+        	]
+
+        	
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: basic
+      useISO88591: false
+      disabled: false
+      username: roxlenevera362c@gmail.com
+      password: 490D0F9E-4B59-E1DC-D318-AC30F46F279A
+    metaSortKey: -1683998969694.625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2738c6a842b2412e802b84880b4f1e9c
+    parentId: fld_0363138c76194c959eaa3413bee3f961
+    modified: 1689862110560
+    created: 1689861609509
+    url: https://rest.clicksend.com/v3/sms/history
+    name: historico de sms directo a clicksend
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: >-
+        
+        {
+
+        "messages": [
+            {
+              "to": "04126153004",
+              "source": "sdk",
+              "body": "Si te llega este mensaje desde mi api te doy tus besitos <3"
+            }
+        	]
+
+        	
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: basic
+      useISO88591: false
+      disabled: false
+      username: roxlenevera362c@gmail.com
+      password: 490D0F9E-4B59-E1DC-D318-AC30F46F279A
+    metaSortKey: -1683998969644.625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e03a7894e3e549f4b5461d45ced61212
+    parentId: fld_0363138c76194c959eaa3413bee3f961
+    modified: 1689862111593
+    created: 1689861918957
+    url: https://rest.clicksend.com/v3/sms/inbound
+    name: ver sms directo a clicksend
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: >-
+        
+        {
+
+        "messages": [
+            {
+              "to": "04126153004",
+              "source": "sdk",
+              "body": "Si te llega este mensaje desde mi api te doy tus besitos <3"
+            }
+        	]
+
+        	
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: basic
+      useISO88591: false
+      disabled: false
+      username: roxlenevera362c@gmail.com
+      password: 490D0F9E-4B59-E1DC-D318-AC30F46F279A
+    metaSortKey: -1683998969594.625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5a91640f7adf492086d6a836cb77d4f1
+    parentId: fld_89ae1f48f72b481bb1cb7cd684f513f5
+    modified: 1689605784013
+    created: 1684292769585
+    url: "{{ _.local }}universidad/estudiante/28143033"
+    name: Get estudiante ->cedula
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1684694546170.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_89ae1f48f72b481bb1cb7cd684f513f5
+    parentId: wrk_d820dcb6904744fe83635d9361b621fc
+    modified: 1690315221559
+    created: 1684694563491
+    name: Consultas
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1684694511528.75
+    _type: request_group
+  - _id: req_1a702b8f14b449ed9fa45cc3c134253f
+    parentId: fld_89ae1f48f72b481bb1cb7cd684f513f5
+    modified: 1689192509728
+    created: 1689192505705
+    url: "{{ _.local }}estados"
+    name: Get estados
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1684690524067
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4e2412d0e2f14f84906a0b1f44215592
+    parentId: fld_89ae1f48f72b481bb1cb7cd684f513f5
+    modified: 1689260380287
+    created: 1689260368270
+    url: "{{ _.local }}municipios/126"
+    name: Get municipios
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1684688513015.375
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_bc888c7ed048429aa3680e9552afba82
+    parentId: fld_89ae1f48f72b481bb1cb7cd684f513f5
+    modified: 1689260401811
+    created: 1689260391306
+    url: "{{ _.local }}parroquias/1691"
+    name: Get parroquias
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1684687507489.5625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e2130fc1a6434db6b732edc712530711
+    parentId: fld_89ae1f48f72b481bb1cb7cd684f513f5
+    modified: 1696259866403
+    created: 1696259862014
+    url: "{{ _.local }}carreras"
+    name: Get carreras
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1684687004726.6562
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0e271f35b25042bda5696609cb710923
+    parentId: fld_1038860ef0ce415d88469b3c74729580
+    modified: 1703098123191
+    created: 1684632964082
+    url: "{{ _.local }}Login"
+    name: Login
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {	
+        		"email": "roxlenevera362c@gmail.com",
+        		"password": "Desarrollo123"
+        }
+    parameters: []
+    headers:
+      - name: Accept
+        value: application/json
+        id: pair_d96919e6564648b3990f81524c756d06
+        disabled: false
+      - id: pair_f3a82a8cface410ea661ce06ddb154b5
+        name: Content-Type
+        value: application/json
+        description: ""
+    authentication: {}
+    metaSortKey: -1684686501963.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_1038860ef0ce415d88469b3c74729580
+    parentId: wrk_d820dcb6904744fe83635d9361b621fc
+    modified: 1684694494208
+    created: 1684694494208
+    name: Auth
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1684694494208
+    _type: request_group
+  - _id: req_4c12dc8daf5d4266b91b0ee7e4a13784
+    parentId: fld_1038860ef0ce415d88469b3c74729580
+    modified: 1698260764676
+    created: 1698260563344
+    url: "{{ _.local }}cambio_contraseña/2"
+    name: cambio contraseña
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {	
+        		"password": "Desarrollo123"
+        }
+    parameters: []
+    headers:
+      - name: Accept
+        value: application/json
+        id: pair_d96919e6564648b3990f81524c756d06
+        disabled: false
+      - id: pair_f3a82a8cface410ea661ce06ddb154b5
+        name: Content-Type
+        value: application/json
+        description: ""
+    authentication: {}
+    metaSortKey: -1684686501951.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4cfd40182cea4728876cec50a90b8c77
+    parentId: fld_1038860ef0ce415d88469b3c74729580
+    modified: 1689773310571
+    created: 1689771647716
+    url: "{{ _.local }}send-sms"
+    name: sms
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "to": "+584127081154",
+            "message": "Mira mi amor te estoy escribiendo desde sigespro <3"
+        }
+    parameters: []
+    headers:
+      - name: Accept
+        value: application/json
+        id: pair_d96919e6564648b3990f81524c756d06
+        disabled: true
+      - id: pair_f3a82a8cface410ea661ce06ddb154b5
+        name: Content-Type
+        value: application/json
+        description: ""
+        disabled: false
+    authentication: {}
+    metaSortKey: -1684686501938.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5d831e995ab84d21936b8b3d9c5eccdf
+    parentId: fld_1038860ef0ce415d88469b3c74729580
+    modified: 1698769615514
+    created: 1689798183882
+    url: "{{ _.local }}send-sms"
+    name: envio de sms
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        
+        {
+        	"to": "4120122626"
+        	
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1684686501926.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d1aec61af6ed4e3d9ca81c5ee0016f37
+    parentId: fld_1038860ef0ce415d88469b3c74729580
+    modified: 1689704575205
+    created: 1684627275086
+    url: "{{ _.local }}auth/registers/estudiante"
+    name: post register ->estudiante
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nombres": "ROXLENE FRANSHESCA",
+        	"apellidos": "VERA HERNÁNDEZ",
+        	"cedula": 28143033,
+        	"telefono": "04127081155",
+        	"email": "roxlenevera362c@gmail.com",
+        	"carrera": "INF",
+        	"seccion": 7121,
+        	"trayecto": 3,
+        	"estado": 126,
+        	"municipio": 1691,
+        	"parroquia": 5804
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_06c6db155dfc4bc69505e520099ac943
+      - id: pair_03748e7c838f4eb2908b22de180bdeb5
+        name: Accept
+        value: application/json
+        description: ""
+        disabled: false
+    authentication: {}
+    metaSortKey: -1684686501913.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7db6f4168c7a4e219ea928ee036ab450
+    parentId: fld_1038860ef0ce415d88469b3c74729580
+    modified: 1689883803154
+    created: 1684762558181
+    url: "{{ _.local }}auth/registers/comunidad"
+    name: post register ->comunidad
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nombre_empresa": "UNIDOS CONTRA EL CANCER VENEZUELA",
+        	"rif": "J281430333",
+        	"estado": 126,
+        	"municipio": 1691,
+        	"parroquia": 5804,
+        	"detalles": "Av. Principal de Ruiz Pineda",
+        	"cedula": 28143033,
+        	"nombres": "ROXLENE FRANSHESCA",
+        	"apellidos": "VERA HERNÁNDEZ",
+        	"email": "roxlenevera362c@hotmail.com",
+        	"telefono_empresa": "04124256532"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_06c6db155dfc4bc69505e520099ac943
+      - id: pair_03748e7c838f4eb2908b22de180bdeb5
+        name: Accept
+        value: application/json
+        description: ""
+        disabled: false
+    authentication: {}
+    metaSortKey: -1684582074660.875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ea4b89e7bc7a4dd8826a68a3b805f1de
+    parentId: fld_18d9b06abd014749b50c59f38cf2ea4f
+    modified: 1699901314912
+    created: 1690312225629
+    url: "{{ _.local }}clasificacion_proyectos"
+    name: Get -> clasificacion
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"carrera": "INF",
+        	"paginate": 1,
+        	"status": 1
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684343019315.1758
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_18d9b06abd014749b50c59f38cf2ea4f
+    parentId: wrk_d820dcb6904744fe83635d9361b621fc
+    modified: 1690312616069
+    created: 1690312613835
+    name: Clasificacion de proyectos
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1684357977992.1562
+    _type: request_group
+  - _id: req_9f92aa532feb4fefaebbb212e99b26c0
+    parentId: fld_18d9b06abd014749b50c59f38cf2ea4f
+    modified: 1691609583019
+    created: 1691609576647
+    url: "{{ _.local }}clasificacion/activos"
+    name: Get -> clasificacion ACTIVOS
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"carrera": "INF"
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684321516217.0164
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7766acd6beea4618a30c5f7395d2ae91
+    parentId: fld_18d9b06abd014749b50c59f38cf2ea4f
+    modified: 1696277023851
+    created: 1690312631297
+    url: "{{ _.local }}clasificacion"
+    name: post -> clasificacion
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"trayecto": 3,
+        	"descripcion": "SISTEMAS INFORMATICOS",
+        	"carrera": "INF"
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994529.9004
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cf9e81feef3d4ade92b83bddcb40bd0a
+    parentId: fld_18d9b06abd014749b50c59f38cf2ea4f
+    modified: 1690314530885
+    created: 1690314500626
+    url: "{{ _.local }}clasificacion/1"
+    name: put-> clasificacion ->id
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"trayecto": 1,
+        	"descripcion": "Arquitectura del computador",
+        	"carrera": "INF"
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994504.9004
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_74bc97f9017c4ed2a3e59f1c89e84fe3
+    parentId: fld_18d9b06abd014749b50c59f38cf2ea4f
+    modified: 1690314051519
+    created: 1690313073244
+    url: "{{ _.local }}clasificacion/1"
+    name: Get -> clasificacion ->id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994479.9004
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e9f8ea8d8ab24303abad9714792133bf
+    parentId: fld_18d9b06abd014749b50c59f38cf2ea4f
+    modified: 1690314320788
+    created: 1690314316909
+    url: "{{ _.local }}clasificacion/1"
+    name: Del-> clasificacion ->id
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684084982112.2627
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_df54c34a25d449c6ab2def9746e0f741
+    parentId: fld_2fd6d306409d4fdbb4bde9d12c162f15
+    modified: 1698091023257
+    created: 1691175330354
+    url: "{{ _.local }}items_evaluacion"
+    name: Get -> items
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"paginate": 1,
+        	"search": ""
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+        disabled: false
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684343019315.1758
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_2fd6d306409d4fdbb4bde9d12c162f15
+    parentId: wrk_d820dcb6904744fe83635d9361b621fc
+    modified: 1691175343244
+    created: 1691175330350
+    name: crud item de evaluación
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1684340739746.6172
+    _type: request_group
+  - _id: req_4a5d67f99c26417e8a0abc4280adac70
+    parentId: fld_2fd6d306409d4fdbb4bde9d12c162f15
+    modified: 1691609566174
+    created: 1691609562073
+    url: "{{ _.local }}items/activos"
+    name: Get -> items ACTIVOS
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+        disabled: false
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684300013118.857
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8a33a629825e4184a69c82ca588cf530
+    parentId: fld_2fd6d306409d4fdbb4bde9d12c162f15
+    modified: 1691603599697
+    created: 1691175330358
+    url: "{{ _.local }}items"
+    name: post -> items
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"descripcion": "OBJETIVOS GENERALES Y ESPECIFICOS"
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994529.9004
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6c2e3518368b41c295c4ab4262e29106
+    parentId: fld_2fd6d306409d4fdbb4bde9d12c162f15
+    modified: 1691177197840
+    created: 1691177197840
+    url: "{{ _.local }}items"
+    name: post -> items
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"descripcion": "PLANTEAMIENTO DEL PROBLEMA"
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994517.4004
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_11362ad6f41947a289c6223eb2568297
+    parentId: fld_2fd6d306409d4fdbb4bde9d12c162f15
+    modified: 1691597322936
+    created: 1691175330364
+    url: "{{ _.local }}items/2"
+    name: Get -> items  ->id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994511.1504
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6608c85c0b344362b0daa710f1de6635
+    parentId: fld_2fd6d306409d4fdbb4bde9d12c162f15
+    modified: 1691605547712
+    created: 1691175330371
+    url: "{{ _.local }}items/5"
+    name: put-> items->id
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"descripcion": "OBJETIVOS GENERALES Y ESPECÍFICOS"
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994504.9004
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_69762558e88649ea95034967dac3a774
+    parentId: fld_2fd6d306409d4fdbb4bde9d12c162f15
+    modified: 1691601785924
+    created: 1691175330368
+    url: "{{ _.local }}items/2"
+    name: Del-> items ->id
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684084982112.2627
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6d22c912bfb1454881d7dbce2d753bee
+    parentId: fld_f38e88216cf94f528b187ee1ec4bb4ea
+    modified: 1691608874022
+    created: 1691090641068
+    url: "{{ _.local }}items_evaluados"
+    name: Get -> items_evaluados
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"clasificacion_id": 1
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684343019315.1758
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_f38e88216cf94f528b187ee1ec4bb4ea
+    parentId: wrk_d820dcb6904744fe83635d9361b621fc
+    modified: 1691175843414
+    created: 1691090640942
+    name: crud item evaluados en proyectos
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1684323501501.0781
+    _type: request_group
+  - _id: req_575a7fbb2818442cb334faefb540e592
+    parentId: fld_f38e88216cf94f528b187ee1ec4bb4ea
+    modified: 1691608866713
+    created: 1691608754447
+    url: "{{ _.local }}items_evaluados/activos"
+    name: Get -> items_evaluados ACTIVOS
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"clasificacion_id": 1
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684257006922.538
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_49e5e84784184a999cbcece66456e014
+    parentId: fld_f38e88216cf94f528b187ee1ec4bb4ea
+    modified: 1691604634610
+    created: 1691090641116
+    url: "{{ _.local }}items_evaluados"
+    name: post -> items_evaluados
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"item_id": 2,
+        	"porcentaje": 10,
+        	"clasificacion_id": 1
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994529.9004
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e2bfbc02e68e456e98f201f9338a4665
+    parentId: fld_f38e88216cf94f528b187ee1ec4bb4ea
+    modified: 1691605150736
+    created: 1691605150736
+    url: "{{ _.local }}items_evaluados"
+    name: post -> items_evaluados (error)
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"item_id": 2,
+        	"porcentaje": 10,
+        	"clasificacion_id": 1
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994523.6504
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_42599d42dfce47589e1fa07a24ecd536
+    parentId: fld_f38e88216cf94f528b187ee1ec4bb4ea
+    modified: 1691605314337
+    created: 1691090641120
+    url: "{{ _.local }}items_evaluados/1"
+    name: Get -> items_evaluados  ->id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994514.2754
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8117944b15be499dbf7c0c166c585a66
+    parentId: fld_f38e88216cf94f528b187ee1ec4bb4ea
+    modified: 1691606338282
+    created: 1691090641129
+    url: "{{ _.local }}items_evaluados/1"
+    name: put-> items_evaluados->id
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"item_id": 5,
+        	"porcentaje": 10,
+        	"clasificacion_id": 1
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994504.9004
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_34d40946b28d448c87588c2c27ed61ed
+    parentId: fld_f38e88216cf94f528b187ee1ec4bb4ea
+    modified: 1691175293034
+    created: 1691090641124
+    url: "{{ _.local }}items_evaluados/1"
+    name: Del-> items_evaluados->id
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684084982112.2627
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a9993f77cb1f46c0a4ae8b1d9c7cc894
+    parentId: fld_c1ea69cf6610432bb0b2b33458d39ee6
+    modified: 1698090319504
+    created: 1691683094557
+    url: "{{ _.local }}motivos_denegacion_index"
+    name: Get -> motivos_denegacion
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"search": "123"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684343019315.1758
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_c1ea69cf6610432bb0b2b33458d39ee6
+    parentId: wrk_d820dcb6904744fe83635d9361b621fc
+    modified: 1691683094551
+    created: 1691683094551
+    name: crud motivos denegacion
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1684306263255.539
+    _type: request_group
+  - _id: req_0e12717639a9424b8c5d48ac10776e99
+    parentId: fld_c1ea69cf6610432bb0b2b33458d39ee6
+    modified: 1691683158027
+    created: 1691683094582
+    url: "{{ _.local }}motivos_denegacion/activos"
+    name: Get -> motivos_denegacion ACTIVOS
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684257006922.538
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_81feef1b651e447ea6205e694182ac53
+    parentId: fld_c1ea69cf6610432bb0b2b33458d39ee6
+    modified: 1691683228035
+    created: 1691683094561
+    url: "{{ _.local }}motivos_denegacion"
+    name: post -> motivos_denegacion
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"descripcion": "PROYECTO SIN IMPACTO SOCIAL"
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994529.9004
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f3fb4bdb9485427591aecaa47d9af7f8
+    parentId: fld_c1ea69cf6610432bb0b2b33458d39ee6
+    modified: 1691683254389
+    created: 1691683094579
+    url: "{{ _.local }}motivos_denegacion"
+    name: post -> motivos_denegacion(error)
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"descripcion": "PROYECTO SIN IMPACTO SOCIAL"
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994523.6504
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6857136687d14e07b45f21ac11096626
+    parentId: fld_c1ea69cf6610432bb0b2b33458d39ee6
+    modified: 1691683263259
+    created: 1691683094564
+    url: "{{ _.local }}motivos_denegacion/1"
+    name: Get -> motivos_denegacion->id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994514.2754
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f7c2d51a021d41a182d33c7842c51187
+    parentId: fld_c1ea69cf6610432bb0b2b33458d39ee6
+    modified: 1691683274709
+    created: 1691683094575
+    url: "{{ _.local }}motivos_denegacion/1"
+    name: put-> motivos_denegacion->id
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"descripcion": "PROYECTO SIN IMPACTO SOCIAL"
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994504.9004
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_09917e7150074fb9be5ed36fbb91b7b1
+    parentId: fld_c1ea69cf6610432bb0b2b33458d39ee6
+    modified: 1691683380579
+    created: 1691683094572
+    url: "{{ _.local }}motivos_denegacion/1"
+    name: Del-> motivos_denegacion->id
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684084982112.2627
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b7662dde94d245afa30c035625f1b6c4
+    parentId: fld_759c13a7719245ca9c5dd2a35a52f901
+    modified: 1699910592288
+    created: 1699910422581
+    url: "{{ _.local }}proyectos"
+    name: creacion proyecto
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"necesidad_id": 5,
+        		"especificacion": null,
+        	"clasificacion_id": [2,3]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1699910428663
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_759c13a7719245ca9c5dd2a35a52f901
+    parentId: wrk_d820dcb6904744fe83635d9361b621fc
+    modified: 1699910400092
+    created: 1699910341158
+    name: proyectos
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1684301953694.1543
+    _type: request_group
+  - _id: req_040341fc9d8a4b5292f07b8d8a7ab5f7
+    parentId: fld_c2cb7fdd88764832b384ddd1d877522c
+    modified: 1699899231735
+    created: 1691693267299
+    url: "{{ _.local }}banco_necesidades"
+    name: Get -> necesidades EN ESPERA
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"paginate": null
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684343019315.1758
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_c2cb7fdd88764832b384ddd1d877522c
+    parentId: wrk_d820dcb6904744fe83635d9361b621fc
+    modified: 1691693267294
+    created: 1691693267294
+    name: Necesidades
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1684297644132.7695
+    _type: request_group
+  - _id: req_391fc9efaad24ce3832e2a5a1b9ab413
+    parentId: fld_c2cb7fdd88764832b384ddd1d877522c
+    modified: 1691770522798
+    created: 1691770517123
+    url: "{{ _.local }}necesidades/denegadas"
+    name: Get -> necesidades DENEGADAS
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684332267766.0962
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d92314047da048c9827536be28fa77a3
+    parentId: fld_c2cb7fdd88764832b384ddd1d877522c
+    modified: 1697223536724
+    created: 1691693267322
+    url: "{{ _.local }}necesidades/comunidad?page=4"
+    name: Get -> necesidades POR USER_ID
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"paginate": "1"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684257006922.538
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5fa1ebdae5d647db961e5ae72ee19fc4
+    parentId: fld_c2cb7fdd88764832b384ddd1d877522c
+    modified: 1691693609322
+    created: 1691693267303
+    url: "{{ _.local }}necesidades"
+    name: post -> necesidades
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"necesidad": "SISTEMA DE NÓMINA",
+        	"estado_id": 126,
+        	"municipio_id": 1691,
+        	"parroquia_id": 5804,
+        	"direccion": "Detalles"
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994529.9004
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_79fa70ef212f40ce9ca64a10d6f3245e
+    parentId: fld_c2cb7fdd88764832b384ddd1d877522c
+    modified: 1691698376529
+    created: 1691693267318
+    url: "{{ _.local }}necesidades"
+    name: post -> necesidades (error)
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"necesidad": "SISTEMA DE NÓMINA",
+        	"estado_id": 126,
+        	"municipio_id": 1691,
+        	"parroquia_id": 5804,
+        	"direccion": "Detalles"
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994523.6504
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a3703c3c587645ed835c3dee10d24a0a
+    parentId: fld_c2cb7fdd88764832b384ddd1d877522c
+    modified: 1691760803708
+    created: 1691693267307
+    url: "{{ _.local }}necesidades/1"
+    name: Get -> necesidades->id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994514.2754
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_60906cedceb24cac81b85933b0c02011
+    parentId: fld_c2cb7fdd88764832b384ddd1d877522c
+    modified: 1691768798880
+    created: 1691693267314
+    url: "{{ _.local }}necesidades/1"
+    name: put-> necesidades->id
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"necesidad": "SISTEMA DE NÓMINA",
+        	"estado_id": 126,
+        	"municipio_id": 1691,
+        	"parroquia_id": 5804,
+        	"direccion": "Detalles"
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684170994504.9004
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_de747bc07ab04e4aacb38ce93e7ae359
+    parentId: fld_c2cb7fdd88764832b384ddd1d877522c
+    modified: 1691761819785
+    created: 1691693267310
+    url: "{{ _.local }}necesidades/1"
+    name: Del-> necesidades->id
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684084982112.2627
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e86287b0a839496398e94233ac2fdf5a
+    parentId: fld_c2cb7fdd88764832b384ddd1d877522c
+    modified: 1691768195750
+    created: 1691768165877
+    url: "{{ _.local }}necesidades/denegacion/1"
+    name: put-> necesidades->id DENEGACION
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"motivo_denegacion": 1
+        }
+    parameters: []
+    headers:
+      - id: pair_df9eaa91e1614947a8094ec83385d220
+        name: Accept
+        value: application/json
+        description: ""
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1684084982062.2627
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_6d00c948cc32448d964459a1a626bd3c
+    parentId: wrk_d820dcb6904744fe83635d9361b621fc
+    modified: 1684759250229
+    created: 1684759187642
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: {}
+    color: null
+    isPrivate: false
+    metaSortKey: 1684759187642
+    _type: environment
+  - _id: jar_ce931a8e0b7b49bc8c2f87b646e82dd1
+    parentId: wrk_d820dcb6904744fe83635d9361b621fc
+    modified: 1684864321653
+    created: 1684759187644
+    name: Default Jar
+    cookies:
+      - key: XSRF-TOKEN
+        value: eyJpdiI6IkFnclMvZmJJZnFsaE5iRUNFTnZOY3c9PSIsInZhbHVlIjoiRG5PZ1NrYThsd092NWIyb2IyS0JTcFFLb3VJc3dsOWR2ZDhBejVBZ2NMa2svamJ1V2JvT0VhczFac1BCamcra25MV1FLVjZ3YkJDempxY2w5MmtsV2dtbVNMYmVsQzg5QlhUYVRzbThwM09hdHZ1VGhJQzgzUmJRNUd5UDFnL0UiLCJtYWMiOiIxMDY1MTI1NTY3YWMyMzIwZWQ0MmFkNzc1MDA1ZmYwMWJkZGJlNGYyYjc2ZGVmOTlkZGNkNDJkZTdiODU4OTk0IiwidGFnIjoiIn0%3D
+        expires: 2023-05-23T19:52:01.000Z
+        maxAge: 7200
+        domain: 127.0.0.1
+        path: /
+        extensions:
+          - samesite=lax
+        hostOnly: true
+        creation: 2023-05-23T15:57:13.704Z
+        lastAccessed: 2023-05-23T17:52:01.652Z
+        id: "7310642847776672"
+      - key: laravel_session
+        value: eyJpdiI6IlpqUkhGcnJoZlNlVUhjUnQySGxuSlE9PSIsInZhbHVlIjoibi9ZZUNXTjljYTNIWmx0c2JFQkJNWTFIekNzN2hoK0VCaXhSaHpnbUNxemR0OWdwS0FWdlZXVE85T3JBVjB6dkVTQkNJR3U3Q09iYWFEYnlXWTdLUjJ3d25OM3VpZUc2Y3JhNHloeVlmcnZLSGVvcVd6bENiQzFtelpWcEUvMy8iLCJtYWMiOiIwMzc2MjVhMGUyMzliMWZhMDI0MTIwM2I3NDMzMjJiNThmMTg2ZTgyMmVjNThjNDM3MWZiNDVhNDkxY2JmMWEwIiwidGFnIjoiIn0%3D
+        expires: 2023-05-23T19:52:01.000Z
+        maxAge: 7200
+        domain: 127.0.0.1
+        path: /
+        httpOnly: true
+        extensions:
+          - samesite=lax
+        hostOnly: true
+        creation: 2023-05-23T15:57:13.704Z
+        lastAccessed: 2023-05-23T17:52:01.653Z
+        id: "13791192989229772"
+    _type: cookie_jar
+  - _id: spc_a7aba4737bf4483e93469a8b536197a7
+    parentId: wrk_d820dcb6904744fe83635d9361b621fc
+    modified: 1686592582635
+    created: 1686592582635
+    fileName: SIGESPRO
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: uts_45a873c5171b45e3994ef302c106791f
+    parentId: wrk_d820dcb6904744fe83635d9361b621fc
+    modified: 1684292769590
+    created: 1684292769590
+    name: Example Test Suite
+    _type: unit_test_suite
+  - _id: env_dd79ea13146647169b05f52b06c1fadc
+    parentId: env_6d00c948cc32448d964459a1a626bd3c
+    modified: 1703706465420
+    created: 1684759251123
+    name: New Environment
+    data:
+      local: http://172.16.20.19:8002/
+      token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTcyLjE2LjIwLjE5OjgwMDIvTG9naW4iLCJpYXQiOjE3MDM3MDY0NTQsImV4cCI6MTcwMzcxMzY1NCwibmJmIjoxNzAzNzA2NDU0LCJqdGkiOiJ2amN5RFlERzFCTUJOaE1ZIiwic3ViIjoiMzciLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Jv2NNYnN9FscmsWsL47koLBiHne3w_8H7Ioyx66qyVc
+    dataPropertyOrder:
+      "&":
+        - local
+        - token
+    color: "#00ff62"
+    isPrivate: false
+    metaSortKey: 1684759251123
+    _type: environment
